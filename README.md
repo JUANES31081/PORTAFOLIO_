@@ -1,2 +1,3 @@
 # PORTAFOLIO_
-en este repositorio se adjuntaran los proyectos desarrollados para poder enseñar en una entrevista.
+En este repositorio se encuentran algunos de los codigos desarrollados por el ingeniero Juan Esteban Infante Andrade.
+
