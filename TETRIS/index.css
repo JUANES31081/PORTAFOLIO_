@@ -1,0 +1,80 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#Tablero {
+    position: relative;
+    width: 400px; /* 10 celdas * 30px por celda */
+    height: 800px; /* 20 celdas * 30px por celda */
+    border: 2px solid #0ff;
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff;
+}
+#Puntuacion {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+    font-size: 20px;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.cell {
+    width: 40px; /* Ajusta el ancho de la celda */
+    height: 40px; /* Ajusta la altura de la celda */
+    border: none; /* Elimina las líneas de los divs */
+}
+
+.tetromino-cell {
+    border: 1px solid #000; /* Ajusta el color y el tamaño del borde según tus necesidades */
+}
+
+#LOSE {
+    font-size: 50px;
+    color: red;
+    text-align: center;
+}
+
+#LOSE, #restartButton {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Ajusta el ancho del botón */
+    text-align: center;
+}
+
+#LOSE {
+    top: 40%; /* Ajusta la posición vertical del texto "Game Over" */
+    font-size: 50px;
+    color: red;
+    z-index: 2;
+}
+
+#restartButton {
+    top: 60%; /* Ajusta la posición vertical del botón */
+    padding: 10px 20px; /* Ajusta el padding para cambiar el tamaño del botón */
+    font-size: 20px; /* Ajusta el tamaño del texto del botón */
+    z-index: 2;
+    border: none;
+    color: #0ff;
+    background-color: #000;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff;
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff;
+    transition: all 0.2s ease-in-out;
+}
+
+#restartButton:hover {
+    box-shadow: 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 60px #0ff;
+}
