@@ -1,0 +1,27 @@
+table {
+    border-collapse: collapse;
+    border: 2px solid black; /* Borde exterior del tablero */
+}
+.sud, td {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+/* Aplicar bordes adicionales para cada región */
+tr:nth-child(4n+1) td {
+    border-top-width: 2px;
+}
+
+tr:nth-child(4n) td {
+    border-bottom-width: 2px;
+}
+
+td:nth-child(4n+1) {
+    border-left-width: 2px;
+}
+
+td:nth-child(4n) {
+    border-right-width: 2px;
+}
