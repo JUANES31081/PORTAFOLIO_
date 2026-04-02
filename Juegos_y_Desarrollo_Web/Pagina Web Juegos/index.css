@@ -1,0 +1,174 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Asegura que el body ocupe al menos toda la altura de la ventana */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Cambia esto al color de fondo que prefieras */
+}
+
+.button_f {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #84e408;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button_f:hover {
+    background-color: rgb(133, 214, 11);
+}
+
+.button_N {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #faf6f6;
+    background-color: #686d63;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button_N:hover {
+    background-color: rgb(52, 53, 50);
+}
+
+.button_m {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000000;
+    background-color: #eed706;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button_m:hover {
+    background-color: rgb(216, 202, 8);
+}
+
+
+.button_d {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #f30808;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;   
+}
+
+.button_d:hover {
+    background-color: rgb(190, 9, 9);
+}
+
+.button_C {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #d8ca0b;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;   
+}
+
+.button_C:hover {
+    background-color: rgb(182, 179, 19);
+}
+
+.button_T {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #000000; /* Cambiado a negro */
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff; /* Cambiado a blanco */
+    box-shadow: 0 0 5px #ffffff, 0 0 15px #ffffff, 0 0 25px #ffffff, 0 0 35px #ffffff; /* Cambiado a blanco */
+    transition: all 0.3s ease;
+}
+
+.button_T:hover {
+    background-color: #000000; /* Cambiado a negro */
+    text-shadow: 0 0 15px #ffffff, 0 0 25px #ffffff, 0 0 35px #ffffff, 0 0 45px #ffffff; /* Cambiado a blanco */
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff; /* Cambiado a blanco */
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+    width: 30px; /* Ajusta el ancho de las celdas */
+    height: 30px; /* Ajusta la altura de las celdas */
+}
+
+.nonograma td {
+    width: 30px; /* Puedes ajustar este tamaño si quieres */
+    height: 30px; /* Puedes ajustar este tamaño si quieres */
+    border: 1px solid black;
+}
+
+/* Estilos para celdas correctas */
+td.llena-correcta {
+    background-color: #84e408;
+    color: #fff;
+}
+
+/* Estilos para celdas incorrectas */
+td.llena-incorrecta {
+    background-color: #f30808;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pistas {
+    margin-right: 20px;
+}
+
+.nonograma {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.nonograma td {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+#pistas-filas,
+#pistas-columnas {
+    border: 1px solid black;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.pista {
+    font-size: 22px; /* Aumenta el tamaño del texto */
+    padding: 0px; /* Añade un poco de espacio alrededor del texto */
+}
+
+
+table.nonograma td:first-child {
+    min-width: 70px; /* Ajusta esto al ancho que prefieras */
+}
